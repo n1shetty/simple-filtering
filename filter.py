@@ -2,12 +2,12 @@ import h5py
 import numpy as np
 import matplotlib.pyplot as plt
 
-'''
-hf = h5py.File('/home/saitama/Desktop/Magazine/data.h5', 'r')
-data = np.array(hf.get('dataset_1'))
 
-plt.plot(data[10000:14000])
-plt.show()
+#Uncomment the lines below to run the same code for the ECG signal and path-to-file = location of data.h5 file on your system
+#Comment line 19 to run the same code for the ECG signal
+'''
+hf = h5py.File('/path-to-file/data.h5', 'r')
+x = np.array(hf.get('dataset_1'))
 '''
 
 alpha = 0.1
